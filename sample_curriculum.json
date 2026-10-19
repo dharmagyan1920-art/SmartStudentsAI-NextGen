@@ -1,0 +1,102 @@
+{
+  "dataset": {
+    "label": "SAMPLE DATA - written for app development. Not official, not complete, not verified by any board or teacher.",
+    "sample": true
+  },
+  "boards": [
+    {"id": "cbse", "name": "CBSE"},
+    {"id": "icse", "name": "ICSE"},
+    {"id": "maharashtra", "name": "Maharashtra State Board"}
+  ],
+  "mediums": [
+    {"id": "english", "name": "English"},
+    {"id": "marathi", "name": "Marathi"},
+    {"id": "hindi", "name": "Hindi"}
+  ],
+  "streams": [
+    {"id": "science", "name": "Science"},
+    {"id": "commerce", "name": "Commerce"},
+    {"id": "arts", "name": "Arts / Humanities"}
+  ],
+  "subjects": [
+    {"id": "math", "name": "Mathematics", "classRange": [1, 10], "compulsory": true},
+    {"id": "english", "name": "English", "classRange": [1, 12], "compulsory": true},
+    {"id": "evs", "name": "Environmental Studies", "classRange": [1, 5], "compulsory": true},
+    {"id": "science", "name": "Science", "classRange": [6, 10], "compulsory": true},
+    {"id": "social", "name": "Social Science", "classRange": [6, 10], "compulsory": true},
+    {"id": "marathi", "name": "Marathi", "boards": ["maharashtra"], "classRange": [1, 10], "compulsory": true},
+    {"id": "hindi", "name": "Hindi", "boards": ["cbse", "icse", "maharashtra"], "classRange": [1, 10], "compulsory": false},
+
+    {"id": "physics", "name": "Physics", "classRange": [11, 12], "streams": ["science"], "compulsory": true},
+    {"id": "chemistry", "name": "Chemistry", "classRange": [11, 12], "streams": ["science"], "compulsory": true},
+    {"id": "math_sci", "name": "Mathematics", "classRange": [11, 12], "streams": ["science"], "compulsory": false},
+    {"id": "biology", "name": "Biology", "classRange": [11, 12], "streams": ["science"], "compulsory": false},
+
+    {"id": "accountancy", "name": "Accountancy", "classRange": [11, 12], "streams": ["commerce"], "compulsory": true},
+    {"id": "business", "name": "Business Studies", "classRange": [11, 12], "streams": ["commerce"], "compulsory": true},
+    {"id": "economics_com", "name": "Economics", "classRange": [11, 12], "streams": ["commerce"], "compulsory": true},
+    {"id": "math_com", "name": "Mathematics", "classRange": [11, 12], "streams": ["commerce"], "compulsory": false},
+
+    {"id": "history", "name": "History", "classRange": [11, 12], "streams": ["arts"], "compulsory": true},
+    {"id": "polsci", "name": "Political Science", "classRange": [11, 12], "streams": ["arts"], "compulsory": true},
+    {"id": "geography", "name": "Geography", "classRange": [11, 12], "streams": ["arts"], "compulsory": false},
+    {"id": "economics_arts", "name": "Economics", "classRange": [11, 12], "streams": ["arts"], "compulsory": false}
+  ],
+  "chapters": [
+    {"id": "math3_c1", "subjectId": "math", "classLevel": 3, "number": 1, "title": "Numbers up to 1000"},
+    {"id": "math3_c2", "subjectId": "math", "classLevel": 3, "number": 2, "title": "Addition and Subtraction"},
+    {"id": "math3_c3", "subjectId": "math", "classLevel": 3, "number": 3, "title": "Shapes and Patterns"},
+    {"id": "eng3_c1", "subjectId": "english", "classLevel": 3, "number": 1, "title": "Reading Short Stories"},
+    {"id": "eng3_c2", "subjectId": "english", "classLevel": 3, "number": 2, "title": "Nouns and Verbs"},
+    {"id": "sci6_c1", "subjectId": "science", "classLevel": 6, "number": 1, "title": "Living and Non-living Things"},
+    {"id": "sci6_c2", "subjectId": "science", "classLevel": 6, "number": 2, "title": "Parts of a Plant"},
+    {"id": "sci9_c1", "subjectId": "science", "classLevel": 9, "number": 1, "title": "States of Matter"},
+    {"id": "sci9_c2", "subjectId": "science", "classLevel": 9, "number": 2, "title": "Motion and Speed"},
+    {"id": "phy11_c1", "subjectId": "physics", "classLevel": 11, "number": 1, "title": "Units and Measurement"},
+    {"id": "phy11_c2", "subjectId": "physics", "classLevel": 11, "number": 2, "title": "Motion in a Straight Line"}
+  ],
+  "lessons": [
+    {"id": "math3_c1_l1", "chapterId": "math3_c1", "order": 1, "title": "Reading and writing numbers"},
+    {"id": "math3_c1_l2", "chapterId": "math3_c1", "order": 2, "title": "Place value: ones, tens, hundreds"},
+    {"id": "math3_c1_l3", "chapterId": "math3_c1", "order": 3, "title": "Comparing numbers"},
+    {"id": "math3_c2_l1", "chapterId": "math3_c2", "order": 1, "title": "Adding two numbers"},
+    {"id": "eng3_c2_l1", "chapterId": "eng3_c2", "order": 1, "title": "What is a noun?"},
+    {"id": "sci6_c1_l1", "chapterId": "sci6_c1", "order": 1, "title": "Signs of life"},
+    {"id": "phy11_c1_l1", "chapterId": "phy11_c1", "order": 1, "title": "Physical quantities and units"}
+  ],
+  "resources": [
+    {"id": "r_math3_c1_l1_notes", "lessonId": "math3_c1_l1", "type": "NOTES", "title": "Notes: reading numbers",
+     "body": "A 3-digit number has hundreds, tens and ones.\n\nExample: 347 is read as 'three hundred forty-seven'.\n\nTip: read the hundreds first, then the tens and ones together.",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l1_expl", "lessonId": "math3_c1_l1", "type": "EXPLANATION", "title": "Explanation: why zeros matter",
+     "body": "In 205 the zero shows that there are no tens. Without the zero we would write 25, which is a very different number.",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l1_qa", "lessonId": "math3_c1_l1", "type": "QUESTION_ANSWER", "title": "Question and answer",
+     "body": "Q: How do we write 'four hundred six' in digits?\nA: 406.\n\nQ: How many tens are in 480?\nA: 8 tens.",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l1_mcq", "lessonId": "math3_c1_l1", "type": "MCQ", "title": "Multiple-choice questions",
+     "body": "1. Which number is 'two hundred nine'?\n   (a) 29   (b) 209   (c) 290   (d) 2009\n   Answer: (b)\n\n2. How many hundreds are in 758?\n   (a) 5   (b) 8   (c) 7   (d) 75\n   Answer: (c)",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l1_practice", "lessonId": "math3_c1_l1", "type": "PRACTICE", "title": "Practice exercise",
+     "body": "Write in digits:\n1. Three hundred twelve\n2. Five hundred five\n3. Nine hundred ninety",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l1_ws", "lessonId": "math3_c1_l1", "type": "WORKSHEET", "title": "Worksheet",
+     "body": "Fill in the blanks:\n1. 456 = __ hundreds + __ tens + __ ones\n2. 700 + 20 + 3 = ___\n3. The number after 599 is ___",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l1_quiz", "lessonId": "math3_c1_l1", "type": "QUIZ", "title": "Quick quiz",
+     "body": "Q1. Which is bigger: 389 or 398?\nQ2. How many ones are in 604?\nQ3. Write 'eight hundred one' in digits.\n\nAnswers: 398; 4; 801",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l1_rev", "lessonId": "math3_c1_l1", "type": "REVISION", "title": "Revision points",
+     "body": "- Numbers up to 999 have hundreds, tens and ones.\n- Zero holds a place.\n- Read hundreds first.",
+     "source": "Original sample text written for this app"},
+    {"id": "r_math3_c1_l2_notes", "lessonId": "math3_c1_l2", "type": "NOTES", "title": "Notes: place value",
+     "body": "In 538: the 5 is in the hundreds place (500), the 3 is in the tens place (30) and the 8 is in the ones place (8).",
+     "source": "Original sample text written for this app"},
+    {"id": "r_phy11_c1_l1_notes", "lessonId": "phy11_c1_l1", "type": "NOTES", "title": "Notes: base quantities",
+     "body": "A physical quantity is something that can be measured, such as length, mass and time.\n\nIn the SI system the base units are the metre (length), kilogram (mass) and second (time).",
+     "source": "Original sample text written for this app"},
+    {"id": "r_phy11_c1_l1_mcq", "lessonId": "phy11_c1_l1", "type": "MCQ", "title": "Multiple-choice questions",
+     "body": "1. The SI unit of mass is:\n   (a) gram   (b) kilogram   (c) pound   (d) tonne\n   Answer: (b)",
+     "source": "Original sample text written for this app"}
+  ]
+}
